@@ -1,9 +1,3 @@
-# create a rectangle class that has a setter for width and height and getter for area, perimeter and diagonal
-# and a method that returns a string representation of the rectangle using '*' and a \n for new line
-# and a get_amount_inside method that returns the number of times a smaller rectangle fits inside the larger rectangle
-# also create a square class that inherits from rectangle and has a setter for side and getter for area, perimeter and diagonal
-# if an instance of a Rectangle is represented as a string, it should look like: Rectangle(width=5, height=10)
-
 class Rectangle():
     def __init__(self, width: float, height: float) -> None:
         self.width = width
@@ -75,19 +69,3 @@ if __name__ == "__main__":
     rect.set_height(8)
     rect.set_width(16)
     print(rect.get_amount_inside(sq))
-
-    # output
-    # 50
-    # 26
-    # Rectangle(width=10, height=3)
-    # **********
-    # **********
-    # **********
-    # 81
-    # 5.656854249492381
-    # Square(side=4)
-    # ****
-    # ****
-    # ****
-    # ****
-    # 2
