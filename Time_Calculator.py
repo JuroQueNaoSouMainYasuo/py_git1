@@ -8,6 +8,14 @@ days_of_week = {
     7: "Saturday"
 }
 def sum_time(h1: int, m1: int, h2: int, m2: int) -> dict:
+    """
+    Sum two times and return a dict with the result
+    Args:
+        h1 (int): hours of the first time
+        m1 (int): minutes of the first time
+        h2 (int): hours of the second time
+        m2 (int): minutes of the second time
+    """
     dic_time = {"h": 0, "m": 0, "days": 0}
     h_total = h1 + h2
     m_total = m1 + m2
@@ -20,6 +28,13 @@ def sum_time(h1: int, m1: int, h2: int, m2: int) -> dict:
     return dic_time
 
 def add_time(t1: str, t2: str, initial_day=None) -> None:
+    """ 
+    add two times and print the result
+    Args:
+        t1 (str): initial time in format "hh:mm" or "hh:mm AM/PM"
+        t2 (str): time interval in the format hh:mm
+        initial_day (str, optional): string who represents the day of the week. Defaults to None.
+    """
     t1 = t1.lower()
     t2 = t2.lower()
     t1_time, t1_ampm = t1.split(' ')
